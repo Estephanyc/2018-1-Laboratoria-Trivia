@@ -1,7 +1,7 @@
 window.onload = function() {
-    var name = prompt("¿cuál es tu nombre?");
+    var name = document.getElementById("Nombre").value;
     document.getElementById("name").innerText = name;
-
+    
     var wantToPlay = prompt("¿quieres jugar? s/n");
     if (wantToPlay.toLowerCase() == "s") {
         var answer1 = prompt("¿han egresado hombres en Laboratoria? s/n");
