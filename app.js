@@ -1,17 +1,21 @@
-window.onload = function() {
-    var name = prompt("¿cuál es tu nombre?");
+ console.log("hla");
+ function question() 
+ {
+ 
     document.getElementById("name").innerText = name;
 
-    var wantToPlay = prompt("¿quieres jugar? s/n");
-    if (wantToPlay.toLowerCase() == "s") {
-        var answer1 = prompt("¿han egresado hombres en Laboratoria? s/n");
-        if (answer1.toLowerCase() == "n") {
+    
+        var answer1 = document.quiz.question1.value;
+        if (answer1 == "No")
+         {
             document.getElementById("rightAnswersText").innerHTML =
                 document.getElementById("rightAnswersText").innerHTML +
                 "<div class='answer'>" +
                 "<p>No han egresado hombres</p>"
             "</div>";
-        } else {
+        } 
+        else 
+        {
             document.getElementById("wrongAnswersText").innerHTML =
                 document.getElementById("wrongAnswersText").innerHTML +
                 "<div class='answer'>" +
@@ -19,21 +23,21 @@ window.onload = function() {
             "</div>";
         }
 
-        var answer2 = prompt("¿hay laboratoria en concepción? s/n");
-        if (answer2.toLowerCase() == "n") {
+        var answer2 = document.quiz.question2.value;
+        if (answer2 == "No")
+         {
             document.getElementById("rightAnswersText").innerHTML =
                 document.getElementById("rightAnswersText").innerHTML +
                 "<div class='answer'>" +
                 "<p>No hay laboratoria en concepción</p>"
             "</div>";
-        } else {
+        }
+         else
+          {
             document.getElementById("wrongAnswersText").innerHTML =
                 document.getElementById("wrongAnswersText").innerHTML +
                 "<div class='answer'>" +
                 "<p>No hay laboratoria en concepción</p>"
             "</div>";
-        }
-    } else {
-        document.getElementById("warningMessage").innerText = "Bueno Chao";
-    }
-}
+          }
+      }
