@@ -5,42 +5,43 @@
     <meta charset=utf-8>
     <title>Trivia</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
 </head>
 
 <body>
-    <form>
-      <p>Nombre: <input type="text" name="nombre" value=""></p>
     
-        <input type="submit" value="Enviar">
-    </form>
-
-        <div id="upperBar">
-            <span id="name"></span>
+              <div id="upperBar">
+            <span id="spanName"></span>
 <!--Preguntas en el dom sin alert-->
+
 <form id='quiz' name='quiz'>
 
-      <div id='question1Checked'>
+      <div id="box-name">
+<h1> Bienvenido antes de comenzar ingresa tu nombre </h1>
+      <p>Nombre:<input type="text" id="lname"></p>
+    
+        <input id='button' type='button' value='¡Ingresar nombre!' onclick='processName()'>
+       </div>
+
+       <div id="box-answers">
+   
         <p>¿han egresado hombres en Laboratoria? s/n"</p>
         <input type='radio' name='question1' value='Si'> Si<br>
         <input type='radio' name='question1' value='No'> No<br>
        
-      </div>
-
-      <div id='question2Checked'>
+    
         <p>¿hay laboratoria en concepción? s/n</p>
         <input type='radio' name='question2' value='Si'> Si<br>
         <input type='radio' name='question2' value='No'> No<br>
-       
-      </div>
+    
       
-      <input id='button' type='button' value='¡Terminé!' onclick='question()'>
-
+        <input id='button' type='button' value='¡Terminé!' onclick='question()'>
+        <input id= 'button' type='button' value='¡Empezar de nuevo!' onclick='location.reload()'>
+        </div>
     </form>
     <!--Preguntas en el dom sin alert-->
-    <div id="upperBar">
-        <span id="nameLabel">Nombre : </span>
-        <span id="name"></span>
-    </div>
+    
+
     <div id="scoreBoard">
         <div id="rightAnswers">
             <h2>Respuestas correctas</h2>
@@ -58,7 +59,6 @@
     <div id="warningBlock">
         <p id="warningMessage"></p>
     </div>
-    <script src="app.js"></script>
 </body>
 
 </html>

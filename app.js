@@ -1,10 +1,16 @@
- console.log("hla");
+var processName = function()
+{
+     var userName =  document.getElementById("lname").value;
+    document.getElementById('spanName').textContent = 'Bienvenid@, ' + userName;
+    document.getElementById('box-name').style.display = 'none';
+     document.getElementById('box-answers').style.display = 'inline-block';
+     document.getElementById('scoreBoard').style.visibility = 'inherit';
+}
+
  function question() 
  {
  
-    document.getElementById("name").innerText = name;
-
-    
+       
         var answer1 = document.quiz.question1.value;
         if (answer1 == "No")
          {
