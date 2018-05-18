@@ -16,6 +16,35 @@
 
         <div id="upperBar">
             <span id="name"></span>
+<!--Preguntas en el dom sin alert-->
+<form id='quiz' name='quiz'>
+
+      <div id='question1Checked'>
+        <p>¿han egresado hombres en Laboratoria? s/n"</p>
+        <input type='radio' name='question1' value='Si'> Si<br>
+        <input type='radio' name='question1' value='No'> No<br>
+       
+      </div>
+
+      <div id='question2Checked'>
+        <p>¿hay laboratoria en concepción? s/n</p>
+        <input type='radio' name='question2' value='Si'> Si<br>
+        <input type='radio' name='question2' value='No'> No<br>
+       
+      </div>
+      
+      <input id='button' type='button' value='¡Terminé!' onclick='question()'>
+
+    </form>
+    <!--Preguntas en el dom sin alert-->
+    <div id="upperBar">
+        <span id="nameLabel">Nombre : </span>
+        <span id="name"></span>
+    </div>
+    <div id="scoreBoard">
+        <div id="rightAnswers">
+            <h2>Respuestas correctas</h2>
+            <div id="rightAnswersText">
 
             </div>
         </div>
